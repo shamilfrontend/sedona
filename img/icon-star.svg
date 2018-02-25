@@ -1,0 +1,20 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="33" height="21"
+     viewBox="0 0 33 21"
+     preserveAspectRatio="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <path  d="
+      M 22.000 15.000
+      L 28.466 19.899
+      L 25.804 12.236
+      L 32.462 7.601
+      L 24.351 7.764
+      L 22.000 0.000
+      L 19.649 7.764
+      L 11.538 7.601
+      L 18.196 12.236
+      L 15.534 19.899
+      L 22.000 15.000
+    " fill="#81b3d2"/>
+</svg>

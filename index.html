@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <a class="logo" href="index.html">лого</a>
+      <nav class="main-menu clearfix">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и&nbsp;видео</a></li>
+          <li><a href="#map">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <div class="main-poster">
+        <div class="slogan slogan-welcome">Welcome to the gorgeous</div>
+        <div class="slogan slogan-sedona">Sedona</div>
+        <blockquote class="slogan slogan-cite">Because the Grand Canyon sucks</blockquote>
+      </div>
+
+      <section class="intro">
+        <h1 class="intro-title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
+      </section>
+
+      <div class="features features-open features-open-left row">
+        <div class="feature-description column">
+          <div class="feature-title">
+            Настоящий<br> городок
+          </div>
+          <span class="feature-number">&mdash;&nbsp;&#8470;1&nbsp;&mdash;</span>
+          <p>Седона не&nbsp;атракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="feature-poster column column-double">
+          <img class="poster" src="img/tmp/photo-02.jpg" width="1600" height="800" alt="Городок">
+        </div>
+      </div>
+
+      <ul class="advices row">
+        <li class="advice-description column">
+          <div class="advice-title advice-title-house">Жилье</div>
+          <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+        </li>
+        <li class="advice-description advice-description-middle column">
+          <div class="advice-title advice-title-food">Еда</div>
+          <p>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
+        </li>
+        <li class="advice-description column">
+          <div class="advice-title advice-title-gift">Сувениры</div>
+          <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+        </li>
+      </ul>
+
+      <div class="features features-open features-open-right row">
+        <div class="feature-poster column column-double">
+          <img class="poster" src="img/tmp/photo-03.jpg"  width="1600" height="800" alt="Мост дьявола">
+        </div>
+        <div class="feature-description column">
+          <div class="feature-title">
+            Там есть<br> мост дьявола
+          </div>
+          <span class="feature-number">&mdash;&nbsp;&#8470;2&nbsp;&mdash;</span>
+          <p>Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+        </div>
+      </div>
+
+      <ul class="features row">
+        <li class="feature-description column">
+          <div class="feature-title">
+            Небольшая<br> площадь
+          </div>
+          <span class="feature-number">&mdash;&nbsp;&#8470;3&nbsp;&mdash;</span>
+          <p>Все достопримеча-<br>тельности находятся очень близко</p>
+        </li>
+        <li class="feature-description column">
+          <div class="feature-title">
+            Красивая<br> дорога
+          </div>
+          <span class="feature-number">&mdash;&nbsp;&#8470;4&nbsp;&mdash;</span>
+          <p>Ехать в&nbsp;седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+        </li>
+        <li class="feature-description column">
+          <div class="feature-title">
+            Мало<br> туристов
+          </div>
+          <span class="feature-number">&mdash;&nbsp;&#8470;5&nbsp;&mdash;</span>
+          <p>Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+        </li>
+      </ul>
+
+      <div class="choose-hotel" id="choose-hotel">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+        <a class="btn btn-order btn-toggle" href="#">Поиск гостиницы в Седоне</a>
+
+        <div class="choose-hotel-popup popup popup-hide">
+          <form class="form" action="/search" method="post">
+            <fieldset class="form-row">
+              <label class="form-label" for="date-in">Дата заезда:</label>
+              <input class="form-input form-input-date" type="date" name="date-in" id="date-in" value="2014-04-24">
+              <span class="icon-calendar"></span>
+            </fieldset>
+
+            <fieldset class="form-row">
+              <label class="form-label" for="date-out">Дата выезда:</label>
+              <input class="form-input form-input-date" type="date" name="date-out" id="date-out" value="2014-07-04">
+              <span class="icon-calendar"></span>
+            </fieldset>
+
+            <fieldset class="counters form-row">
+              <fieldset class="counter">
+                <label class="form-label" for="counter-adult">Взрослые:</label>
+                <button class="icon-minus" type="button" tabindex="-1"></button>
+                <input class="form-input form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">
+                <button class="icon-plus" type="button" tabindex="-1"></button>
+              </fieldset>
+              <fieldset class="counter">
+                <label class="form-label" for="counter-children">Дети:</label>
+                <button class="icon-minus" type="button" tabindex="-1"></button>
+                <input class="form-input form-input-counter" type="text" name="counter-children" id="counter-children" value="0">
+                <button class="icon-plus" type="button" tabindex="-1"></button>
+              </fieldset>
+            </fieldset>
+
+            <input class="btn" type="submit" value="Найти">
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer main-footer-map">
+      <div class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855" width="1200" height="593" allowfullscreen></iframe>
+      </div>
+
+      <div class="footer-columns row">
+        <div class="footer-hashtag column">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="footer-socials column">
+          <ul>
+            <li><a class="btn btn-social icon-twitter" href="#">Twitter</a></li>
+            <li><a class="btn btn-social icon-facebook" href="#">Facebook</a></li>
+            <li><a class="btn btn-social icon-youtube" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright column">
+          <span>website by</span>
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=B4xz3OhG1NpNoXt_DV-0Khy-zlejFxE2&id=map"></script> -->
+  <script src="js/main.min.js"></script>
+</body>
+</html>
