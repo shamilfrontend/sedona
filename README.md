@@ -1,2 +1,3 @@
 # sedona
-верстка сайта Sedona (наставничество на html academy)
+
+demo - https://shamilfrontend.github.io/sedona/
